@@ -28,7 +28,9 @@ public class encrypt_caesar {
 
 		System.out.print("enter offset (1 - 25): "); 
 		int offset = sc.nextInt() % 26;
+		sc.close();
 
 		System.out.println("cipher-text: " + caesarShift(encodedMsg, offset));
+
 	}
 }

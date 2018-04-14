@@ -25,9 +25,11 @@ public class decrypt_caesar {
 
 		System.out.print("enter cipher-text: "); 
 		String encodedMsg = sc.nextLine();
+		sc.close();
 
 		for (int i = 1; i < 26; i++) {
 			System.out.println(i + "\t" + decCaesarShift(encodedMsg, i));
 		}
+
 	}
 }
